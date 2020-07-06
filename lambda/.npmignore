@@ -1,0 +1,21 @@
+
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+
+# Webpack directories
+.webpack
+.envrc
+
+# Build files
+dist/
+build/
+
+# ASK CLI files
+.ask/lambda
+
+# Misc
+.DS_Store

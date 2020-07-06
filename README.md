@@ -19,31 +19,61 @@ Please follow the wizard to start your Alexa skill project ->
 ? Please type in your skill name:  alexa-skill-sample-helloworld-typescript
 ? Please type in your folder name for the skill project (alphanumeric):  alexa-skill-sample-helloworld-typescript
 
-% tree alexa-skill-sample-helloworld-typescript -L 3 -I node_modules
-alexa-skill-sample-helloworld-typescript
+% tree alexa-skill-sample-helloworld-typescript -I node_modules
+.
 ├── LICENSE.txt
+├── README.md
 ├── ask-resources.json
 ├── hooks
-│   └── build.sh
+│   └── build.sh
 ├── infrastructure
-│   └── cfn-deployer
-│       └── skill-stack.yaml
+│   └── lambda-deployer
 ├── lambda
-│   ├── package.json
-│   ├── src
-│   │   ├── index.ts
-│   │   └── util.ts
-│   ├── tsconfig.json
-│   └── webpack.config.ts
+│   ├── README.md
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── src
+│   │   ├── HelpIntent
+│   │   │   ├── HelpIntent.router.ts
+│   │   │   ├── HelpIntent.speech.tsx
+│   │   │   └── tests
+│   │   │       ├── HelpIntent.router.spec.ts
+│   │   │       └── HelpIntent.speech.spec.tsx
+│   │   ├── LaunchRequest
+│   │   │   ├── LaunchRequest.router.ts
+│   │   │   ├── LaunchRequest.speech.tsx
+│   │   │   └── tests
+│   │   │       ├── LaunchRequest.router.spec.ts
+│   │   │       └── LaunchRequest.speech.spec.tsx
+│   │   ├── StopAndCancelAndNoIntent
+│   │   │   ├── StopAndCancelAndNoIntent.router.ts
+│   │   │   ├── StopAndCancelAndNoIntent.speech.tsx
+│   │   │   └── tests
+│   │   │       ├── StopAndCancelAndNoIntent.router.spec.ts
+│   │   │       └── StopAndCancelAndNoIntent.speech.spec.tsx
+│   │   ├── index.ts
+│   │   └── tests
+│   │       └── index.spec.ts
+│   ├── tsconfig.json
+│   └── webpack.config.ts
 └── skill-package
     ├── assets
-    │   ├── en-US_largeIcon.png
-    │   └── en-US_smallIcon.png
+    │   ├── en-US_largeIcon.png
+    │   └── en-US_smallIcon.png
     ├── interactionModels
-    │   └── custom
+    │   └── custom
+    │       └── en-US.json
     └── skill.json
 
-9 directories, 12 files
+16 directories, 27 files
+
+```
+
+## [Optional] Manually setup
+
+```bash
+$ rm -rf lambda/*
+$ npx @talkyjs/cli new  --path lambda --database=dynamodb --controller=handler --ssml=default --no-test
 ```
 
 ## Deployment

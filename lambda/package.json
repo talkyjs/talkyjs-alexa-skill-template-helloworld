@@ -1,0 +1,62 @@
+{
+  "name": "hello-world",
+  "version": "0.0.0",
+  "description": "alexa utility for quickly building skills",
+  "main": "/index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:dev": "jest --watch --silent=false --verbose false --coverage"
+  },
+  "author": "TalkyJS team",
+  "license": "MIT",
+  "dependencies": {
+    "@talkyjs/core": "0.x",
+    "@ask-utils/router": "3.x",
+    "@ask-utils/speech-script": "3.x",
+    "ask-sdk-core": "^2.6.0",
+    "ask-sdk-model": "^1.18.0"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "tests"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "tsx",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.(ts|tsx)$",
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node",
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    }
+  },
+  "devDependencies": {
+    "@ask-utils/test": "3.x",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.5",
+    "@types/webpack": "^4.41.12",
+    "jest": "^26.0.1",
+    "source-map-support": "^0.5.19",
+    "ts-jest": "^25.5.1",
+    "ts-loader": "^7.0.2",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

@@ -13,7 +13,7 @@
       "skillInfrastructure": {
         "userConfig": {
           "runtime": "nodejs12.x",
-          "handler": "build/index.handler",
+          "handler": "dist/index.handler",
           "awsRegion": "us-east-1"
         },
         "type": "@ask-cli/lambda-deployer"
