@@ -7,7 +7,7 @@ We can easy to setup own Alexa custom skill with TypeScript and AWS CloudFormati
 ## Usage
 
 ```
-% ask new  --template-url https://github.com/ask-utils/talkyjs-alexa-skill-template-helloworld.git
+% ask new  --template-url https://github.com//talkyjs/talkyjs-alexa-skill-template-helloworld.git
 
 ? Choose a method to host your skill's backend resources:  (Use arrow keys)
 ❯ Alexa-hosted skills
@@ -19,7 +19,7 @@ We can easy to setup own Alexa custom skill with TypeScript and AWS CloudFormati
   ──────────────
   self-hosted and manage your own hosting 
   
-[Warn]: CLI is about to download the skill template from unofficial template https://github.com/ask-utils/talkyjs-alexa-skill-template-helloworld.git. Please make sure you understand the source code to best protect yourself
+[Warn]: CLI is about to download the skill template from unofficial template https://github.com//talkyjs/talkyjs-alexa-skill-template-helloworld.git. Please make sure you understand the source code to best protect yourself
  from malicious usage.
 ? Would you like to continue download the skill template?  Yes
 ? Please type in your skill name:  talkyjs-alexa-skill-template-helloworld
