@@ -12,8 +12,7 @@
   "author": "TalkyJS team",
   "license": "MIT",
   "dependencies": {
-    "@talkyjs/core": "0.x",
-    "@ask-utils/router": "3.x",
+    "@talkyjs/core": "1.x",
     "@ask-utils/speech-script": "3.x",
     "ask-sdk-core": "^2.6.0",
     "ask-sdk-model": "^1.18.0"
