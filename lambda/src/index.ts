@@ -7,11 +7,11 @@ import { StopAndCancelAndNoIntentRouter } from './StopAndCancelAndNoIntent/StopA
 const config: TalkyJSSkillConfig = {
     stage: 'development',                   // [Optional] Skill Stage
     logLevel: 'info',                       // [Optional] Log level
-    database: {                             // [Optional] Database configuration
-        type: "none",                       // [Optional] Database type (none / s3 / dynamodb)
-        tableName: '',                      // [Optional] Database table name
+    //database: {                             // [Optional] Database configuration
+    //    type: "none",                       // [Optional] Database type (none / s3 / dynamodb)
+    //    tableName: '',                      // [Optional] Database table name
     //  s3PathPrefix: ''                    // [Optional] [Only S3] S3 path prefix
-    },
+    //},
     apiClient: {                            // SMAPI and Alexa API Client configuration
         useDefault: true,                   // Use DefaultApiClient
         // client: new DefaultApiClient()   // If you have own ApiClient, put here
