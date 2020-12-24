@@ -9,7 +9,9 @@ export const LaunchRequestRouter: Router = {
     handler: async (handlerInput) => {
         
         
-        const script = new LaunchRequestScript(handlerInput)
+        const script = new LaunchRequestScript(handlerInput, {
+            dummyProps: "It's a nice development."
+        })
         return script
             .createResponseBuilder()
             .getResponse();

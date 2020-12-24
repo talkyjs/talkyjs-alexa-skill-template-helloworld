@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HelpIntentRouter canHandle should return false when given a not IntentRequest 1`] = `true`;
+
+exports[`HelpIntentRouter handle should match snapshot 1`] = `
+Object {
+  "outputSpeech": Object {
+    "ssml": "<speak><p>Hello! It's a nice development. How are you?</p></speak>",
+    "type": "SSML",
+  },
+  "reprompt": Object {
+    "outputSpeech": Object {
+      "ssml": "<speak><p>How are you?</p></speak>",
+      "type": "SSML",
+    },
+  },
+  "shouldEndSession": false,
+}
+`;

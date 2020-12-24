@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skill handler should match the snapshot of the "AMAZON.CancelIntent" IntentRequest 1`] = `
+Object {
+  "response": Object {
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Good-bye!</p></speak>",
+      "type": "SSML",
+    },
+  },
+  "sessionAttributes": Object {
+    "__talkyjs": Object {
+      "sessionSituation": Object {
+        "invocationNumber": 0,
+        "turnCount": 1,
+      },
+    },
+  },
+  "userAgent": "ask-node/2.10.1 Node/v12.14.1",
+  "version": "1.0",
+}
+`;
+
+exports[`Skill handler should match the snapshot of the "AMAZON.HelpIntent" IntentRequest 1`] = `
+Object {
+  "response": Object {
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Hello! It's a nice development. How are you?</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak><p>How are you?</p></speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "__talkyjs": Object {
+      "recordedResponse": Object {
+        "outputSpeech": Object {
+          "ssml": "<speak><p>Hello! It's a nice development. How are you?</p></speak>",
+          "type": "SSML",
+        },
+        "reprompt": Object {
+          "outputSpeech": Object {
+            "ssml": "<speak><p>How are you?</p></speak>",
+            "type": "SSML",
+          },
+        },
+        "shouldEndSession": false,
+      },
+      "sessionSituation": Object {
+        "invocationNumber": 0,
+        "turnCount": 1,
+      },
+    },
+  },
+  "userAgent": "ask-node/2.10.1 Node/v12.14.1",
+  "version": "1.0",
+}
+`;
+
+exports[`Skill handler should match the snapshot of the "AMAZON.NoIntent" IntentRequest 1`] = `
+Object {
+  "response": Object {
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Good-bye!</p></speak>",
+      "type": "SSML",
+    },
+  },
+  "sessionAttributes": Object {
+    "__talkyjs": Object {
+      "sessionSituation": Object {
+        "invocationNumber": 0,
+        "turnCount": 1,
+      },
+    },
+  },
+  "userAgent": "ask-node/2.10.1 Node/v12.14.1",
+  "version": "1.0",
+}
+`;
+
+exports[`Skill handler should match the snapshot of the "AMAZON.StopIntent" IntentRequest 1`] = `
+Object {
+  "response": Object {
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Good-bye!</p></speak>",
+      "type": "SSML",
+    },
+  },
+  "sessionAttributes": Object {
+    "__talkyjs": Object {
+      "sessionSituation": Object {
+        "invocationNumber": 0,
+        "turnCount": 1,
+      },
+    },
+  },
+  "userAgent": "ask-node/2.10.1 Node/v12.14.1",
+  "version": "1.0",
+}
+`;
+
+exports[`Skill handler should return false when given a not LaunchRequest 1`] = `
+Object {
+  "response": Object {
+    "outputSpeech": Object {
+      "ssml": "<speak><p><amazon:emotion name=\\"excited\\" intensity=\\"high\\">Hello!</amazon:emotion>It's a nice development. How are you?</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak><p>How are you?</p></speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "__talkyjs": Object {
+      "recordedResponse": Object {
+        "outputSpeech": Object {
+          "ssml": "<speak><p><amazon:emotion name=\\"excited\\" intensity=\\"high\\">Hello!</amazon:emotion>It's a nice development. How are you?</p></speak>",
+          "type": "SSML",
+        },
+        "reprompt": Object {
+          "outputSpeech": Object {
+            "ssml": "<speak><p>How are you?</p></speak>",
+            "type": "SSML",
+          },
+        },
+        "shouldEndSession": false,
+      },
+      "sessionSituation": Object {
+        "invocationNumber": 0,
+        "turnCount": 1,
+      },
+    },
+  },
+  "userAgent": "ask-node/2.10.1 Node/v12.14.1",
+  "version": "1.0",
+}
+`;
+
+exports[`Skill handler should return false when given a not SessionEndedRequest 1`] = `
+Object {
+  "response": Object {},
+  "sessionAttributes": Object {
+    "__talkyjs": Object {
+      "sessionSituation": Object {
+        "invocationNumber": 0,
+        "turnCount": 1,
+      },
+    },
+  },
+  "userAgent": "ask-node/2.10.1 Node/v12.14.1",
+  "version": "1.0",
+}
+`;
