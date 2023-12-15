@@ -1,14 +1,16 @@
-/** @jsx ssml */
-import {
-    ssml,
-    SpeechScriptJSX,
-} from '@ask-utils/speech-script'
+import React from 'react';
+import { SpeechScriptJSXWithOption } from '@talkyjs/ssml'
 
-export class LaunchRequestScript extends SpeechScriptJSX {
+export class LaunchRequestScript extends SpeechScriptJSXWithOption<{
+    dummyProps: string;
+}> {
     speech() {
         return (
             <speak>
-                <p>Hello! It's a nice development. How are you?</p>
+                <p>
+                    <amazon-emotion name="excited" intensity="high">Hello!</amazon-emotion>
+                    {this.options.dummyProps} How are you?
+                </p>
             </speak>
         )
     }

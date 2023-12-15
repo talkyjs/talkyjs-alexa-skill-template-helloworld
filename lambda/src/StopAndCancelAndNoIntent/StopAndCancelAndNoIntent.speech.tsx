@@ -1,8 +1,5 @@
-/** @jsx ssml */
-import {
-    ssml,
-    SpeechScriptJSX,
-} from '@ask-utils/speech-script'
+import React from 'react';
+import { SpeechScriptJSX } from '@talkyjs/ssml'
 
 export class StopAndCancelAndNoIntentScript extends SpeechScriptJSX {
     speech() {

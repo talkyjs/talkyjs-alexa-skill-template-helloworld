@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LaunchRequestScript should return false when given a not IntentRequest 1`] = `
+Object {
+  "outputSpeech": Object {
+    "ssml": "<speak><p><amazon:emotion name=\\"excited\\" intensity=\\"high\\">Hello!</amazon:emotion>It's a nice development. How are you?</p></speak>",
+    "type": "SSML",
+  },
+  "reprompt": Object {
+    "outputSpeech": Object {
+      "ssml": "<speak><p>How are you?</p></speak>",
+      "type": "SSML",
+    },
+  },
+  "shouldEndSession": false,
+}
+`;

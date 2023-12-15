@@ -12,11 +12,12 @@
   "author": "TalkyJS team",
   "license": "MIT",
   "dependencies": {
-    "@talkyjs/core": "0.x",
-    "@ask-utils/router": "3.x",
-    "@ask-utils/speech-script": "3.x",
+    "@talkyjs/core": "1.x",
+    "@talkyjs/ssml": "0.2.0",
     "ask-sdk-core": "^2.6.0",
-    "ask-sdk-model": "^1.18.0"
+    "ask-sdk-model": "^1.18.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "directories": {
     "lib": "src",
@@ -49,6 +50,8 @@
     "@ask-utils/test": "3.x",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.13.5",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "@types/webpack": "^4.41.12",
     "jest": "^26.0.1",
     "source-map-support": "^0.5.19",

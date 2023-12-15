@@ -1,4 +1,4 @@
-import { Router } from "@ask-utils/router";
+import { Router } from "@talkyjs/core";
 
 import { StopAndCancelAndNoIntentScript } from './StopAndCancelAndNoIntent.speech'
 

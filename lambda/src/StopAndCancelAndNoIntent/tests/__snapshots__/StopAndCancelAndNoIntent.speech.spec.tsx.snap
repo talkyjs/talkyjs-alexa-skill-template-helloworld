@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StopAndCancelAndNoIntentScript should match the snapshot of the "AMAZON.CancelIntent" IntentRequest 1`] = `
+Object {
+  "outputSpeech": Object {
+    "ssml": "<speak><p>Good-bye!</p></speak>",
+    "type": "SSML",
+  },
+}
+`;
+
+exports[`StopAndCancelAndNoIntentScript should match the snapshot of the "AMAZON.NoIntent" IntentRequest 1`] = `
+Object {
+  "outputSpeech": Object {
+    "ssml": "<speak><p>Good-bye!</p></speak>",
+    "type": "SSML",
+  },
+}
+`;
+
+exports[`StopAndCancelAndNoIntentScript should match the snapshot of the "AMAZON.StopIntent" IntentRequest 1`] = `
+Object {
+  "outputSpeech": Object {
+    "ssml": "<speak><p>Good-bye!</p></speak>",
+    "type": "SSML",
+  },
+}
+`;

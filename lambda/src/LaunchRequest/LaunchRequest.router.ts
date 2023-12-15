@@ -1,4 +1,4 @@
-import { Router } from "@ask-utils/router";
+import { Router } from "@talkyjs/core";
 
 import { LaunchRequestScript } from './LaunchRequest.speech'
 
@@ -9,7 +9,9 @@ export const LaunchRequestRouter: Router = {
     handler: async (handlerInput) => {
         
         
-        const script = new LaunchRequestScript(handlerInput)
+        const script = new LaunchRequestScript(handlerInput, {
+            dummyProps: "It's a nice development."
+        })
         return script
             .createResponseBuilder()
             .getResponse();

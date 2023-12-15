@@ -8,7 +8,9 @@ describe('LaunchRequestScript', () => {
       name: "LaunchRequest",
       confirmationStatus: 'NONE'
     });
-    const script = new LaunchRequestScript(handlerInput);
+    const script = new LaunchRequestScript(handlerInput, {
+      dummyProps: "It's a nice development."
+  });
     expect(script.createResponse()).toMatchSnapshot();
   });
   
